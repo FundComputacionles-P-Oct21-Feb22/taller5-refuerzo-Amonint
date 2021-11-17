@@ -1,0 +1,38 @@
+1.  Inicio 
+2.  tipoVehiculo x(15)[{a-z}{BS}{A-Z}]
+3.  vehiculo1 x(15) <-- auto
+4.  vehiculo2 x(15) <-- camioneta
+5.  vehiculo3 x(15) <-- bus
+6.   valorjuegodellantas d[0,n]
+7.   numerojuegollantas d[0,n]   
+8.  porcentaje1 d[0,n] <-- 10
+9.  porcentaje2 d[0,n] <-- 20
+10.  porcentaje3 d[0,n] <-- 30
+11.  descuento1 d[0,n]
+12.  descuento2 d[0,n]
+13. descuento3 d[0,n]
+14.  subtotal d[0,n]
+15.  valorTotal d[0,n]
+16.  Escribir "Ingrese el  tipo de vehiculo"
+17.  Lea  tipoVehiculo
+18   Escribir "Ingrese el valor del juego de llantas"
+19.  Lea  valorjuegodellantas    
+20    Escribir "Ingrese el numero de juego de llantas para el vehiculo "
+21.   lea numerojuegollantas
+22.   Subtotal  valorjuegodellantas * numerojuegollantas 
+23. Si tipoVehiculo == vehiculo1
+24. descuento1 <--  subtotal * porcentaje1 / 100
+25.  valorTotal  <-- subtotal - descuento1
+26. De lo contrario
+27. Si tipoDevehiculo == vehiculo2
+28. descuento2 <--  subtotal * porcentaje2 / 100
+29. valorTotal  <-- subtotal - descuento2
+30. De lo contrario
+31. tipoDevehiculo ==  vehiculo3
+32. descuento3 <--  subtotal * porcentaje3 / 100
+33.  valorTotal  <-- subtotal - descuento3
+34. Fin si
+35. Fin si 
+36. Escribir "El Subtotal por pagar es" + subtotal
+37. Escribir "El valor total por pagar es" + valorTotal
+38. Fin
